@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажерный зал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тренажерный зал</h1>
+        <div id="step1">
+            <p>Сколько вам лет?</p>
+            <button onclick="selectAge('18-30')">18-30</button>
+            <button onclick="selectAge('30-50')">30-50</button>
+            <button onclick="selectAge('50+')">50+</button>
+        </div>
+        <div id="step2" style="display: none;">
+            <p>Выберите группу мышц:</p>
+            <button onclick="selectMuscleGroup('Грудь')">Грудь</button>
+            <button onclick="selectMuscleGroup('Спина')">Спина</button>
+            <button onclick="selectMuscleGroup('Ноги')">Ноги</button>
+            <button onclick="selectMuscleGroup('Руки')">Руки</button>
+            <button onclick="selectMuscleGroup('Плечи')">Плечи</button>
+            <button onclick="selectMuscleGroup('Пресс')">Пресс</button>
+        </div>
+        <div id="step3" style="display: none;">
+            <p>Выберите тренажер:</p>
+            <div id="equipmentList"></div>
+        </div>
+        <div id="step4" style="display: none;">
+            <p>Информация о тренажере:</p>
+            <p id="equipmentDescription"></p>
+            <p id="recommendedTime"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
